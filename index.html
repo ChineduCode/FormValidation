@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <meta name="description" content="Learning how to validate for form using javascript">
+    <meta name="author" content="real_Chinedu">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <h2 class="header">Form Validation</h2>
+            <form action="validation" class="myForm">
+                <h2 class="add-user-text">Add User</h2>
+                
+                <div class="input-container">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="email" class="email-Label">Email:</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                
+                <div class="input-container">
+                    <label for="confirm password">Confirm Password:</label>
+                    <input type="password" name="confirm password" id="confirm-password" required>
+                    <small class="confirmationError"></small>
+                </div>
+                
+                <button>Submit</button> 
+            </form>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

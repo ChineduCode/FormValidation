@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    font-family: monospace;
+    padding: 1% 5px; 
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 400px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(250, 235, 215, 0.349);
+    box-shadow: 0 0 2px;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.425);
+    border-bottom: 1px solid rgb(230, 229, 229);
+}
+
+form{
+    padding: 20px;
+}
+.add-user-text{
+    margin-bottom: 20px;
+}
+.input-container{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: monospace;
+    border: solid 1px rgba(24, 24, 24, 0.637);
+}
+
+label{
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: monospace;
+    border: solid 1px rgba(24, 24, 24, 0.637);
+    background-color: rgba(165, 221, 221, 0.658);
+    font-size: 18px;
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+button:active{
+    background-color: rgba(165, 221, 221, 0.795);
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.input-container.error input{
+    border: solid 2px rgb(255, 72, 0);
+}
+.input-container.success input{
+    border: solid 2px rgb(51, 128, 0);
+}
+
+small{
+    display: inline-block;
+    margin-top: 3px;
+    color: rgb(255, 72, 0);
+}
+
